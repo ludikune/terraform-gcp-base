@@ -5,7 +5,7 @@ resource "google_storage_bucket" "bucket" {
   location      = var.region
 
   # Standard security settings
-  force_destroy               = false
+  force_destroy               = true
   public_access_prevention    = "enforced"
   uniform_bucket_level_access = true
 
