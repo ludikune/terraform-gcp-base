@@ -1,6 +1,6 @@
 # Bucket to be used as remote backed for all the environments.
 # Once created backend make sure all environments use it.
-resource "google_storage_bucket" "bucket" {
+resource "google_storage_bucket" "tf_state_bucket" {
   name          = "${var.project_id}-terraform-state"
   location      = var.region
 
