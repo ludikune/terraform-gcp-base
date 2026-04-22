@@ -34,9 +34,9 @@
 #   org_id     = "${var.organization_id}"
 # }
 
-resource "google_project" "my_beauty_project" {
+resource "google_project" "my_project" {
   name       = "My Beauty Project"
-  project_id = "your-project-id-${var.organization_id}"
+  project_id = "${var.project_prefix}-${var.organization_id}"
 }
 
 
